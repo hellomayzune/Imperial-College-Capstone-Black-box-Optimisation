@@ -46,12 +46,12 @@ How Artificial Intelligence (AI) shapes everyday life over the coming decades wi
 
 - Eight black-box functions (F1–F8), 2D → 8D, each solved with a tailored surrogate model — Gaussian Processes, Random Forest/ExtraTrees, SVR, or MC-Dropout MLP. Acquisition strategies matched to each problem: UCB, Expected Improvement, Thompson sampling, posterior-mean argmax.
 
-- A real, imperfect optimisation record — including a documented mistake (Week 10 candidate-filtering on F7 excluded the true optimum, audited and fixed in Week 11) with full transparency: [Methodology](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/methodology.md), [Datasheet](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/datasheet.md), [Model Card](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/model-card.md), [Week Summary](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/week-summary.md), [Architecture Decision Record](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/architecture-decision-record.md), and [BBO Evaluation](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/bbo-evaluation.md) explaining why, not just what
+- A real, imperfect optimisation record — including a documented mistake (Week 10 candidate-filtering on F7 excluded the true optimum, audited and fixed in Week 11) with full transparency: [Methodology](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/methodology.md), [Datasheet](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/datasheet.md), [Model Card](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/model-card.md), [Week Summary](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/week-summary.md), [Architecture Decision Record](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/architecture-decision-record.md), and [BBO Evaluation](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/bbo-evaluation.md) explaining why, not just what.
 All 8 functions improved on their initial best after 13 weeks — see [Results summary](#-results-summary).
 
 > ✍️ This [blog](https://mayzune.com/2026/08/29/finding-a-mountain-peak-in-zero-visibility/) reflects the journey of finding a mountain peak in zero visibility.
 
-> 🏆 The presentation **bbo-capstone-project-presentation-week12-module23.md** is submitted at Week 12, Module 23 for Stage 2: Required capstone component 23.2. It received Exemplary Assignment Badge.
+> 🏆 The presentation **bbo-capstone-project-presentation-week12-module23.md** was submitted at Week 12, Module 23 for Stage 2: Required capstone component 23.2. It received Exemplary Assignment Badge.
 
 
 👩‍🔬 Author: May Zune | Imperial College Business School 2026
@@ -85,7 +85,7 @@ This **repository** contains the following contents.
 
 ## 🚀 Project overview
 
-This project applies a **Sequential Surrogate Optimisation Strategy (SSOS)** to optimise eight black-box functions over a 13-week capstone. Each week, new input variables are selected based on previous observations with the goal of maximising the function output. As the project progresses, the 2D to 8D dimensionality of the search space increases, introducing greater optimisation complexity. Rather than focusing solely on finding the global optimum, this project emphasises a systematic, data-driven optimisation process. The objective is to demonstrate practical machine learning and black-box optimisation skills through thoughtful experimentation, iterative model refinement, and well-documented decision-making. 
+This project applies a **Sequential Surrogate-Optimisation Suite (SSOS)** to optimise eight black-box functions over a 13-week capstone. Each week, new input variables are selected based on previous observations with the goal of maximising the function output. As the project progresses, the 2D to 8D dimensionality of the search space increases, introducing greater optimisation complexity. Rather than focusing solely on finding the global optimum, this project emphasises a systematic, data-driven optimisation process. The objective is to demonstrate practical machine learning and black-box optimisation skills through thoughtful experimentation, iterative model refinement, and well-documented decision-making. 
 
 <img src="https://raw.githubusercontent.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/main/figures/mz-bbo-abstract.png" alt="abstract" width="900" />
 
@@ -95,7 +95,7 @@ This project applies a **Sequential Surrogate Optimisation Strategy (SSOS)** to 
 
 This **SSOS** capstone project applies black-box optimisation to maximise 8 unknown functions (F1–F8, ranging from 2D to 8D) under a strict budget of one query per function per week. 
 
-An Exploratory Data Analysis (EDA) study is conducted via [initial-data-exploratory-data-analysis.ipynb](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/codes/initial-data-exploratory-data-analysis.ipynb) and [initial-data-OLS-regression.ipynb](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/codes/initial-data-OLS-regression.ipynb)  using the initial data to uncover variable correlations, boundaries, and landscape structures before running iterative optimisation algorithms.
+An Exploratory Data Analysis (EDA) study is conducted via [initial-data-exploratory-data-analysis.ipynb](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/codes/initial-data-exploratory-data-analysis.ipynb) and [initial-data-OLS-regression.ipynb](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/codes/initial-data-OLS-regression.ipynb) using the initial data to uncover variable correlations, boundaries, and landscape structures before running iterative optimisation algorithms.
 
 The [initial-data-pca-gpr-rbf.ipynb](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/codes/initial-data-pca-gpr-rbf.ipynb) notebook addresses two related but fundamentally different questions:
 
@@ -123,7 +123,7 @@ Leaderboard scores (where #1 is the best among 34 participants) are included to 
 | F3 | 3D | 1D | 15 | 💊 A drug discovery | −0.034835 | −0.015072 | 0 | 0.5673 | 6 | 16 |
 | F4 | 4D | 1D | 30 | 🏭 Warehouse business | −4.025542 | 0.664078 | 0.68 | 0.9966 | 8 | 4 |
 | F5 | 4D | 1D | 20 | ⚗️ Chemical process in a factory | 1088.86 | 14653 | 8663 | 1.7908 (outperform) | 10 | 1 |
-| F6| 5D | 1D | 20 | 🍰 A cake recipe | −0.714265 | −0.338381 | −0.130 | 0.6433 | 9 | 17 |
+| F6 | 5D | 1D | 20 | 🍰 A cake recipe | −0.714265 | −0.338381 | −0.130 | 0.6433 | 9 | 17 |
 | F7 | 6D | 1D | 30 | 🔧 Tuning six hyperparameters | 1.364968 | 3.013542 | 3.4 | 0.8101 | 13 | 5 |
 | F8 | 8D | 1D | 40 | 🧠 Eight input parameters | 9.598482 | 9.991664 | 10 | 0.9792 | 13 | 5 |
 
@@ -156,7 +156,7 @@ Imperial College (classroom.emeritus.org) provides initial data as .npy files fo
 
 ### 📝 Extended data and reproducibility
 
-Each week, a new set of query points is generated for each black-box function, and their predicted outputs are estimated by the optimisation model. After submission, the corresponding true function outputs are returned as `new inputs.txt` and `outputs.txt` files, allowing the predictions to be evaluated. The newly acquired input-output pairs are then appended to the existing dataset, progressively increasing the number of training samples and enabling the optimisation model to improve over successive weeks.
+Each week, a new set of query points is generated for each black-box function, and their predicted outputs are estimated by the optimisation model. After submission, the corresponding true function outputs are returned as `inputs.txt` and `outputs.txt` files, allowing the predictions to be evaluated. The newly acquired input-output pairs are then appended to the existing dataset, progressively increasing the number of training samples and enabling the optimisation model to improve over successive weeks.
 
 Weekly submissions are available as `w1-functions-all.ipynb`, `w2-functions-all.ipynb`, etc.
 
@@ -213,7 +213,7 @@ Imperial-College-Capstone-Black-box-Optimisation
 │   ├── analytical-comparison.md                                  ← ⚖️ academic credibility
 │   ├── bbo-capstone-project-presentation-week12-module23.md      ← 🏆 Exemplary assignment badge
 │
-├── 🧩figures                                              ← see all visualisation outputs
+├── 🧩 figures                                              ← see all visualisation outputs
 │
 ├── 💾 initial_data/                                       ← available via https://classroom.emeritus.org/          
 │   ├── function_1/
@@ -259,7 +259,7 @@ The following software packages are used in this project.
 
 In accordance with [Imperial College London's Generative AI guidance](https://www.imperial.ac.uk/admin-services/library/learning-support/generative-ai-guidance/), the following statements acknowledge the use of generative AI tools in this project.
 
-I acknowledge the use of [Gemini](https://gemini.google.com) for conceptual clarification and architecture planning, [ChatGPT](https://chatgpt.com/) for abstract image generation and [Claude](https://claude.ai) for code development, debugging, and drafting and reviewing project documentation. I confirm that no content generated by AI has been presented as my own work.
+I acknowledge the use of [Gemini](https://gemini.google.com) for conceptual clarification and architecture planning, [ChatGPT](https://chatgpt.com/) for abstract image generation, and [Claude](https://claude.ai) for code development, debugging, and drafting and reviewing project documentation. I confirm that no content generated by AI has been presented as my own work.
 
 All AI-assisted code and text were treated as a starting point rather than a final output: outputs were reviewed, tested, and edited by me, technical claims and figures were verified against the actual optimisation results before inclusion, and the surrounding analysis, decision-making, and written narrative reflect my own reasoning rather than unedited AI output.
 
@@ -277,8 +277,8 @@ All AI-assisted code and text were treated as a starting point rather than a fin
 - Srinivas, N., Krause, A., Kakade, S.M. and Seeger, M., 2010. Gaussian process optimization in the bandit setting: no regret and experimental design. In: Proceedings of the 27th International Conference on Machine Learning (ICML 2010). Haifa, Israel, 21–24 June 2010.
 
 **Acknowledgement**
-- Thank you to Wolfram Wiesemann, Alex Ribeiro-Castro, Ruth Misener, and Christopher L. Tucci for their inspiring teaching approach, dedication, and excellence in delivering the Professional Certificate in Machine Learning and Artificial Intelligence at Imperial College London.
-- A special thank you to [@carolinebryant](https://github.com/carolinebryant), Intelligence Analyst [**Caroline Bryant**](https://www.carolinebryant.com/). for sharing inspiring references and resources that helped shape my understanding of Black-Box Optimisation (BBO).
+- A special thank you to Wolfram Wiesemann, Alex Ribeiro-Castro, Ruth Misener, and Christopher L. Tucci for their inspiring teaching approach, dedication, and excellence in delivering the Professional Certificate in Machine Learning and Artificial Intelligence at Imperial College London.
+- Thank you to [@carolinebryant](https://github.com/carolinebryant), Intelligence Analyst [**Caroline Bryant**](https://www.carolinebryant.com/) for sharing inspiring references and resources that helped shape my understanding of Black-Box Optimisation (BBO).
 - Thank you to my study mates, [**Chase Bender**](https://github.com/chasebender) and [**Eduardo**](https://github.com/Wizen-Labs), for their insightful discussions, encouragement, and support throughout the BBO Capstone Project for the Professional Certificate in Machine Learning and Artificial Intelligence at Imperial College London. It was a pleasure learning and tackling this challenge together!
 
 [Back To The Top](#-repositories)
