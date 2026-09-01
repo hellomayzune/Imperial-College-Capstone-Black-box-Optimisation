@@ -8,7 +8,7 @@
 <a href="https://orcid.org/0000-0003-0282-2633"><strong>ORCID</strong></a> •
 <a href="https://scholar.google.com/citations?user=LmP8B_4AAAAJ&hl=en"><strong>Google Scholar</strong></a> •
 <a href="https://www.researchgate.net/profile/May-Zune"><strong>ResearchGate</strong></a> •
-<a href="https://www.linkedin.com/in/mayzune//"><strong>Linkedin</strong></a> •
+<a href="https://www.linkedin.com/in/mayzune/"><strong>Linkedin</strong></a> •
 </p>
 
 <p align="center">
