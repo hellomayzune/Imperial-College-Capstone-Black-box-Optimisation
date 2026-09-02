@@ -1,5 +1,4 @@
-%%writefile requirements.txt
-streamlit>=1.32
-pandas>=2.0
-plotly>=5.18
-openpyxl>=3.1
+streamlit
+pandas
+plotly
+openpyxl
