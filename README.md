@@ -49,6 +49,8 @@ How Artificial Intelligence (AI) shapes everyday life over the coming decades wi
 - A real, imperfect optimisation record — including a documented mistake (Week 10 candidate-filtering on F7 excluded the true optimum, audited and fixed in Week 11) with full transparency: [Methodology](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/methodology.md), [Datasheet](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/datasheet.md), [Model Card](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/model-card.md), [Week Summary](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/week-summary.md), [Architecture Decision Record](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/architecture-decision-record.md), and [BBO Evaluation](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/blob/main/documentation/bbo-evaluation.md) explaining why, not just what.
 All 8 functions improved on their initial best after 13 weeks — see [Results summary](#-results-summary).
 
+> 🧭 This [Streamlit Dashboard](https://imperial-college-capstone-black-box-optimisation-jvpxnyteappsr.streamlit.app/) tracks weekly submissions across 8 black-box optimisation functions over 13 weeks, letting you compare each function's progress against its initial best, view leaderboards, and analyze which surrogate-model families (GP, Random Forest, etc.) teams used.
+
 > ✍️ This [blog](https://mayzune.com/2026/08/29/finding-a-mountain-peak-in-zero-visibility/) reflects the journey of finding a mountain peak in zero visibility.
 
 > 🏆 The presentation **bbo-capstone-project-presentation-week12-module23.md** was submitted at Week 12, Module 23 for Stage 2: Required capstone component 23.2. It received Exemplary Assignment Badge.
@@ -76,6 +78,7 @@ This **repository** contains the following contents.
   - [Extended data and reproducibility](#-extended-data-and-reproducibility)
 - [Repository map](#-repository-map)
 - [Documentation](#-documentation)
+  - [Streamlit dashboard](#-streamlit-dashboard)
 - [Software packages](#-software-packages)
 - [AI use disclosure](#-ai-use-disclosure)
 - [References and acknowledgement](#-references-and-acknowledgement)
@@ -237,6 +240,19 @@ Imperial-College-Capstone-Black-box-Optimisation
 | **🔥 BBO evaluation** | Full-timeline assessment (Week 2–13) of what worked and what didn't — tracking a maturity curve from ad hoc, per-function pipelines to a structured framework with cross-validation, calibration checks, and fidelity tracking. Notes that the final pure-exploitation phase gave record gains on half the functions, illustrating that good calibration alone isn't sufficient for global convergence without re-exploration. |
 | **🏷️ Analytical comparison** | Week-by-week code-similarity check ([analytical-comparison-caroline-may.ipynb](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/tree/main/codes) and [analytical-comparison.md](https://github.com/hellomayzune/Imperial-College-Capstone-Black-box-Optimisation/tree/main/documentation)) against Caroline's reference pipeline scripts, establishing academic integrity requirement, similar problem structure and independent development of the modelling approach and custom fidelity metrics while acknowledging the referenced work. |
 
+
+[Back To The Top](#-repositories)
+
+### 🧭 Streamlit dashboard
+
+| Page | What it shows |
+|---|---|
+| 🏠 Overview | Key summary metrics, initial-vs-best progress bars, top-performing submissions, and a complete summary table |
+| 📈 Function Progress | Single-function view: weekly output trajectory against the baseline best, alongside a complete submission history |
+| 🔬 Compare Functions | Multi-function overlay using raw values or normalized (0–1) scaling for equitable side-by-side comparison |
+| 🏆 Leaderboard | Function leaderboard standings sorted directly by rank |
+| 🧪 Candidate Generators | Categorised breakdown of surrogate model notes (e.g., GP, Random Forest) tracked by usage frequency and timeline |
+| 📋 Submission Log | Complete, filterable week-by-function record exportable to CSV |
 
 [Back To The Top](#-repositories)
 
