@@ -73,11 +73,14 @@ st.sidebar.caption(
 # PAGE 1 — Overview
 # ===========================================================================
 if page == "🏠 Overview":
-    st.title("Weekly Black-Box Optimisation — Overview")
+    st.title("Finding a Mountain Peak in Zero Visibility")
     st.write(
         "Across 13 weeks, candidate query points were submitted for **8 black-box functions** " 
         "based on **surrogate** model predictions. Each week, one point was evaluated per function, " 
-        "and the corresponding true function outputs were recorded."
+        "and the corresponding true function outputs were recorded. "
+        "If you are using a mobile device, tap the **>>** icon in the top left corner "
+        "to open the menu and view the project overview, function progress, function comparisons, "
+        "leaderboard, candidate generators, and submission log. "
     )
 
     # --- headline metrics -------------------------------------------------
